@@ -1,0 +1,50 @@
+[project]
+name = "peakwhale-pod"
+version = "1.0.0"
+description = "Domain-agnostic K-means cohort and regional clustering engine with plain-English segment labels, outlier detection, HTTP API, and MCP server."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Aditya Rao (Addy) Kaveti" }]
+keywords = ["clustering", "kmeans", "segmentation", "cohorts", "analytics", "fastapi", "mcp"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.5,<2",
+    "pydantic>=2.6",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "mcp>=1.6,<3",
+]
+
+[project.scripts]
+pod = "pod.cli:main"
+pod-mcp = "pod.mcp_server:main"
+
+[project.urls]
+Homepage = "https://github.com/PeakWhale/pod"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "httpx>=0.27",
+]
+
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pod"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"examples" = "pod/examples"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

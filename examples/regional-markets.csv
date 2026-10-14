@@ -1,0 +1,25 @@
+region,active_accounts,yoy_growth_pct,retention_pct,field_reps
+Northeast Metro,420,18.4,94.2,12
+Mid-Atlantic Core,390,16.8,92.8,14
+Great Lakes Hub,365,15.2,91.5,11
+Pacific Northwest,410,19.1,95.0,10
+Bay Area Corridor,460,21.5,96.1,15
+Southern California,445,17.9,93.4,16
+Texas Triangle,430,20.2,94.0,13
+Southeast Sunbelt,380,17.5,92.1,12
+Mountain West,210,24.6,89.5,8
+Southwest Growth,235,26.1,90.2,9
+Carolinas Corridor,250,23.4,91.0,9
+Tennessee Valley,195,22.8,88.9,7
+Intermountain North,180,25.3,89.1,6
+Gulf Coast,220,21.9,88.4,8
+Upper Midwest,125,6.4,86.2,5
+Central Plains,110,5.8,85.5,4
+Northern New England,95,4.9,87.0,4
+Appalachian West,105,5.2,84.8,5
+Dakotas & Prairie,88,6.1,85.9,3
+Ozark Region,118,7.0,86.4,5
+Inland Empire North,132,6.8,86.0,5
+Rust Belt East,140,5.5,85.1,6
+Maritime Frontier,62,31.0,82.0,2
+High Desert Outpost,70,29.4,83.1,2
